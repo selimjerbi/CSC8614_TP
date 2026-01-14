@@ -10,11 +10,8 @@
   - `pip install -r TP2/requirements.txt`
 - **Versions principales** :
   - `torch==2.9.1`
-  - `tiktoken==...`
-  - `pandas==...`
 - **Seed fixé** : 42
 
-<<<<<<< HEAD
 ## Q2 — Type et structure de settings
 settings est un dictionnaire chargé depuis hparams.json.  
 **Copie de sortie :**
