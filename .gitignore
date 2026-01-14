@@ -1,0 +1,41 @@
+# Python caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Caches/logs
+.cache/
+*.log
+
+# Gros fichiers (si besoin)
+*.ckpt
+*.pt
+*.bin
+*# weights/checkpoints/datasets/artifacts
+**/gpt2_weights/
+**/weights/
+**/checkpoints/
+**/*.ckpt*
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.safetensors
+**/*.h5
+
+# datasets / caches
+**/data/
+**/dataset/
+**/__pycache__/
+**/.ipynb_checkpoints/
