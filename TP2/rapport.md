@@ -120,23 +120,3 @@ Conclusion : la loss ne diverge pas et baisse par moments, mais les accuracies m
 
 ## Q12 — Now test the model on your own text : 
 ![alt text](img/capture_q12.png)
-=======
-## Q2 — Type et structure de `settings`
-`settings` est un dictionnaire (`dict`) chargé depuis `hparams.json`.  
-Preuve (sortie notebook) : type + liste des clés + valeurs des champs principaux (`n_vocab`, `n_ctx`, `n_embd`, `n_head`, `n_layer`).
-
-**Copie de sortie (extrait) :**
-- Type(settings): ...
-- Keys: ...
-- n_vocab=..., n_ctx=..., n_embd=..., n_head=..., n_layer=...
-
-## Q3 — Type et structure de `params`
-`params` est un dictionnaire (`dict`) contenant les poids du modèle GPT-2 extraits du checkpoint TensorFlow.  
-Il contient notamment `wte`, `wpe`, `g`, `b` et une liste `blocks` de longueur `n_layer` (un bloc par couche Transformer).  
-
-**Copie de sortie (extrait) :**
-- Keys(params): ...
-- len(params["blocks"]): ...
-- shapes (wte/wpe/...) : ...
-
->>>>>>> b2fde0a887d48e30c63827b32d35724dc54a9501
