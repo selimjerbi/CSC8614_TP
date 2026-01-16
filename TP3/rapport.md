@@ -162,5 +162,5 @@ le modèle pré-entraîné fournit déjà de bonnes représentations, LoRA serva
 ![alt text](img/epoch1.png)
 ---
 
-## Conclusion courte
+## Conclusion
 Ce TP montre comment injecter LoRA dynamiquement dans GPT-2, réduire drastiquement le nombre de paramètres entraînables (~0.8% après injection simple), et vérifier que les gradients ne circulent que dans les paramètres LoRA. L’adaptation à la classification spam est fonctionnelle (head 2 classes + LoRA), mais l’entraînement complet nécessite plus de ressources.
