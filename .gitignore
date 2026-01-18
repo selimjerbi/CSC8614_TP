@@ -39,3 +39,7 @@ Thumbs.db
 **/dataset/
 **/__pycache__/
 **/.ipynb_checkpoints/
+
+TP4/data/emails/*
+TP4/data/cache/*
+TP4/data/admin_pdfs/*

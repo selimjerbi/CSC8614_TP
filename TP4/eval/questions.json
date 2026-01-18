@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "question": "Quels sont les sujets de PFE supplémentaires proposés par Luca Benedetto ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q2",
+    "question": "Comment valider une UE ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q3",
+    "question": "Quelles sont les modalités de rattrapage (seconde session) pour une UE ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q4",
+    "question": "Quelle est la règle concernant l’assiduité ou les absences injustifiées ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q5",
+    "question": "Quel est le sujet principal mentionné dans le dernier email concernant les projets ou stages ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q6",
+    "question": "Quelles sont les règles générales de validation d’un semestre (ou passage) ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q7",
+    "question": "Quelles informations pratiques sont données dans un email sur une réunion, un événement ou une échéance ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q8",
+    "question": "Quelles sont les règles liées à la fraude, au plagiat ou aux sanctions disciplinaires ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q9",
+    "question": "Que dit un email au sujet d’une inscription, d’une procédure administrative ou d’un formulaire ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q10",
+    "question": "Quelles sont les conditions de validation d’un module/UE en termes de notes ou de compensation ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q11",
+    "question": "Quel email mentionne une date limite importante et laquelle ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q12",
+    "question": "Quelles sont les règles de comportement ou de vie scolaire dans le règlement intérieur ?",
+    "expected_doc_type": "admin_pdf"
+  }
+]
