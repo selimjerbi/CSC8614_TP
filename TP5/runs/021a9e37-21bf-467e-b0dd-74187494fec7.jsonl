@@ -1,0 +1,18 @@
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:00.049541Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:25.548091Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "mot de passe ENT", "rationale": "Demande d'accès au mot de passe ENT par courrier"}}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:25.552093Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:30.243056Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "d56b7782ce90", "latency_ms": 4688, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:30.245083Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:30.247082Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:59.944915Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:59.948915Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:59.949952Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:20:59.951950Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:06.018443Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "ENT password reset for student etudiant@exemple.com"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:06.019445Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:10.233081Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "bb9154db15e9", "latency_ms": 4212, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:10.235110Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:10.236083Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:42.311452Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:42.322802Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "021a9e37-21bf-467e-b0dd-74187494fec7", "ts": "2026-01-26T13:21:42.324817Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}

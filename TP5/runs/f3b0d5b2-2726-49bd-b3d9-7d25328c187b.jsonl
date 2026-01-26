@@ -1,0 +1,7 @@
+{"run_id": "f3b0d5b2-2726-49bd-b3d9-7d25328c187b", "ts": "2026-01-26T12:47:33.400552Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "f3b0d5b2-2726-49bd-b3d9-7d25328c187b", "ts": "2026-01-26T12:47:49.191826Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "mot de passe ENT demande par étudiant", "rationale": "L'étudiant a demandé son mot de passe ENT"}}}
+{"run_id": "f3b0d5b2-2726-49bd-b3d9-7d25328c187b", "ts": "2026-01-26T12:47:49.195674Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "f3b0d5b2-2726-49bd-b3d9-7d25328c187b", "ts": "2026-01-26T12:47:53.096203Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "4c494a483acb", "latency_ms": 3898, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "f3b0d5b2-2726-49bd-b3d9-7d25328c187b", "ts": "2026-01-26T12:47:53.098204Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "f3b0d5b2-2726-49bd-b3d9-7d25328c187b", "ts": "2026-01-26T12:47:53.099205Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "f3b0d5b2-2726-49bd-b3d9-7d25328c187b", "ts": "2026-01-26T12:48:17.227931Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}

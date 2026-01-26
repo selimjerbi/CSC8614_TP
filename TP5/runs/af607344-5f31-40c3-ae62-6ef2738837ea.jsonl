@@ -1,0 +1,7 @@
+{"run_id": "af607344-5f31-40c3-ae62-6ef2738837ea", "ts": "2026-01-26T12:17:33.093992Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "af607344-5f31-40c3-ae62-6ef2738837ea", "ts": "2026-01-26T12:18:01.991049Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "mots-clés UE validation, moyenne générale, modalités générales, règlement des études, session de rattrapage", "rationale": "Nécéssite la recherche de documents détaillant les modalités de validation des UE et règles pour les sessions de rattrapage."}}}
+{"run_id": "af607344-5f31-40c3-ae62-6ef2738837ea", "ts": "2026-01-26T12:18:01.994052Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "af607344-5f31-40c3-ae62-6ef2738837ea", "ts": "2026-01-26T12:18:07.170419Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "0bc7ad222318", "latency_ms": 5176, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "af607344-5f31-40c3-ae62-6ef2738837ea", "ts": "2026-01-26T12:18:07.172456Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "af607344-5f31-40c3-ae62-6ef2738837ea", "ts": "2026-01-26T12:18:07.173420Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "af607344-5f31-40c3-ae62-6ef2738837ea", "ts": "2026-01-26T12:18:07.174456Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

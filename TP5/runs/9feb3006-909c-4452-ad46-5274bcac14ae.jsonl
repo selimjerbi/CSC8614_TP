@@ -1,0 +1,2 @@
+{"run_id": "9feb3006-909c-4452-ad46-5274bcac14ae", "ts": "2026-01-26T13:54:19.964588Z", "event": "node_start", "data": {"node": "preset_ignore"}}
+{"run_id": "9feb3006-909c-4452-ad46-5274bcac14ae", "ts": "2026-01-26T13:54:19.965586Z", "event": "node_end", "data": {"node": "preset_ignore", "status": "ok"}}

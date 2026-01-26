@@ -1,0 +1,11 @@
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:44:54.427066Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E02"}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:13.066355Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "2 février devoir Machine Learning Moodle", "rationale": "Déposé de Machine Learning doit être avant le 2 février à 23h59 sur Moodle."}}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:13.069717Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:17.182769Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "b3bae804727c", "latency_ms": 4111, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:17.184775Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:17.185781Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:47.304756Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:47.306765Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:47.308764Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:47.310766Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "48d602e7-df7a-46f9-ac52-004124bc0943", "ts": "2026-01-26T16:45:47.311764Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

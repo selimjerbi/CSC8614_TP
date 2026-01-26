@@ -1,0 +1,11 @@
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:27:30.564439Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "UNKNOWN"}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:27:47.721019Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "mots-clés-pour-preuve", "rationale": "Justification-courte"}}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:27:47.723018Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:27:51.464864Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "02ab3f13338f", "latency_ms": 3738, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:27:51.466373Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:27:51.467381Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:28:28.998988Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:28:29.000988Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:28:29.000988Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:28:29.002990Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "bde7ff52-75b9-4d6f-af33-9129bedcb00a", "ts": "2026-01-26T16:28:29.003988Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

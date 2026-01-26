@@ -1,0 +1,4 @@
+{"run_id": "55c62575-8dd8-4a36-b10e-7d64217f0f6f", "ts": "2026-01-26T16:52:37.357805Z", "event": "node_start", "data": {"node": "stub_ignore"}}
+{"run_id": "55c62575-8dd8-4a36-b10e-7d64217f0f6f", "ts": "2026-01-26T16:52:37.358804Z", "event": "node_end", "data": {"node": "stub_ignore", "status": "ok"}}
+{"run_id": "55c62575-8dd8-4a36-b10e-7d64217f0f6f", "ts": "2026-01-26T16:52:37.359804Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "55c62575-8dd8-4a36-b10e-7d64217f0f6f", "ts": "2026-01-26T16:52:37.361310Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "ignore"}}

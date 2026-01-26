@@ -1,0 +1,7 @@
+{"run_id": "c7bffc5d-5876-4f6a-b9b5-e24ae7de7ee0", "ts": "2026-01-26T12:29:21.002363Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "c7bffc5d-5876-4f6a-b9b5-e24ae7de7ee0", "ts": "2026-01-26T12:29:43.955061Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "UE validation rules, average requirement", "rationale": "Email discusses the requirements for validating a UE (unit of study)."}}}
+{"run_id": "c7bffc5d-5876-4f6a-b9b5-e24ae7de7ee0", "ts": "2026-01-26T12:29:43.959066Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "c7bffc5d-5876-4f6a-b9b5-e24ae7de7ee0", "ts": "2026-01-26T12:29:48.400484Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "8b71c53d4696", "latency_ms": 4441, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "c7bffc5d-5876-4f6a-b9b5-e24ae7de7ee0", "ts": "2026-01-26T12:29:48.402449Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "c7bffc5d-5876-4f6a-b9b5-e24ae7de7ee0", "ts": "2026-01-26T12:29:48.403449Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "c7bffc5d-5876-4f6a-b9b5-e24ae7de7ee0", "ts": "2026-01-26T12:30:17.492588Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}

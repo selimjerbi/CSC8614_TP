@@ -1,0 +1,9 @@
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:12:39.653476Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:12:55.634219Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "password reset request", "rationale": "The user forgot their ENT password and asked for it to be sent via email, potentially breaching security protocols."}}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:12:55.638427Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:13:00.088898Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "30e2a34055ee", "latency_ms": 4448, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:13:00.089899Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:13:00.091933Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:13:28.294170Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:13:28.295170Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "e2208fd0-07b0-4ca1-9880-2e9ee93def63", "ts": "2026-01-26T13:13:28.296217Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}

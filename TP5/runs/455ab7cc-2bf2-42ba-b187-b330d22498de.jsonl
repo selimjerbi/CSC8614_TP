@@ -1,0 +1,11 @@
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:35:30.012924Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:35:49.601486Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "UE validation criteria or rules", "rationale": "Email discusses the requirements for validating a UE (University Credit)"}}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:35:49.603451Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:35:53.596870Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "699a30627f26", "latency_ms": 3990, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:35:53.598848Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:35:53.599811Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:36:30.196115Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:36:30.198118Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:36:30.199113Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:36:30.200151Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "455ab7cc-2bf2-42ba-b187-b330d22498de", "ts": "2026-01-26T16:36:30.201151Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

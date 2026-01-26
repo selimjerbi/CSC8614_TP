@@ -1,0 +1,7 @@
+{"run_id": "2e6a48b7-496a-4ce8-9f50-9f38815c179f", "ts": "2026-01-26T12:41:24.727008Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E05"}}
+{"run_id": "2e6a48b7-496a-4ce8-9f50-9f38815c179f", "ts": "2026-01-26T12:41:40.775231Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Projet, Module ou UE", "rationale": "Pour identifier le projet précisé dans l'email"}}}
+{"run_id": "2e6a48b7-496a-4ce8-9f50-9f38815c179f", "ts": "2026-01-26T12:41:40.779021Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "2e6a48b7-496a-4ce8-9f50-9f38815c179f", "ts": "2026-01-26T12:41:44.737313Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "c0ae56cd1f8c", "latency_ms": 3956, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "2e6a48b7-496a-4ce8-9f50-9f38815c179f", "ts": "2026-01-26T12:41:44.738275Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "2e6a48b7-496a-4ce8-9f50-9f38815c179f", "ts": "2026-01-26T12:41:44.740277Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "2e6a48b7-496a-4ce8-9f50-9f38815c179f", "ts": "2026-01-26T12:42:22.726266Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}

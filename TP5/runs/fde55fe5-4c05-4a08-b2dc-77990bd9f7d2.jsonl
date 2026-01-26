@@ -1,0 +1,11 @@
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:47:35.229950Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E05"}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:47:54.195734Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "module ou UE dans le message du responsable pédagogique", "rationale": "Il manque des détails sur le projet pour répondre correctement."}}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:47:54.200621Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:47:58.512439Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "8e3949426fce", "latency_ms": 4309, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:47:58.514964Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:47:58.515967Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:48:36.160116Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:48:36.162626Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:48:36.163636Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:48:36.165643Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "fde55fe5-4c05-4a08-b2dc-77990bd9f7d2", "ts": "2026-01-26T16:48:36.167644Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

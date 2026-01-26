@@ -1,0 +1,4 @@
+{"run_id": "bddb6c98-ea59-4f5b-9ce6-d1356f6c67a7", "ts": "2026-01-26T12:05:10.100620Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "bddb6c98-ea59-4f5b-9ce6-d1356f6c67a7", "ts": "2026-01-26T12:05:35.314334Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "UE validation criteria proof", "rationale": "Email discusses the requirement for passing a UE and the possibility of a catch-up session."}}}
+{"run_id": "bddb6c98-ea59-4f5b-9ce6-d1356f6c67a7", "ts": "2026-01-26T12:05:35.315334Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "bddb6c98-ea59-4f5b-9ce6-d1356f6c67a7", "ts": "2026-01-26T12:05:35.316337Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

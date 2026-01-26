@@ -1,0 +1,7 @@
+{"run_id": "a0e6bc90-f020-4adb-8b8b-7817ccf28bab", "ts": "2026-01-26T12:42:51.706053Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "a0e6bc90-f020-4adb-8b8b-7817ccf28bab", "ts": "2026-01-26T12:43:05.999534Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Password reset request", "rationale": "The email contains a student's password reset request"}}}
+{"run_id": "a0e6bc90-f020-4adb-8b8b-7817ccf28bab", "ts": "2026-01-26T12:43:06.003535Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "a0e6bc90-f020-4adb-8b8b-7817ccf28bab", "ts": "2026-01-26T12:43:10.135614Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "62f32fa96a2e", "latency_ms": 4131, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "a0e6bc90-f020-4adb-8b8b-7817ccf28bab", "ts": "2026-01-26T12:43:10.137616Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "a0e6bc90-f020-4adb-8b8b-7817ccf28bab", "ts": "2026-01-26T12:43:10.138614Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "a0e6bc90-f020-4adb-8b8b-7817ccf28bab", "ts": "2026-01-26T12:43:38.180762Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}

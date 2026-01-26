@@ -1,0 +1,7 @@
+{"run_id": "a4a4d6a1-8a73-458a-85e6-beddbcf82bb0", "ts": "2026-01-26T12:20:43.338061Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "a4a4d6a1-8a73-458a-85e6-beddbcf82bb0", "ts": "2026-01-26T12:21:06.671275Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "modalités générales validation des UE, règlement des études", "rationale": "Pour répondre à l'email, il est nécessaire de rechercher les modalités spécifiques pour valider une UE ainsi que les dispositions du règlement des études."}}}
+{"run_id": "a4a4d6a1-8a73-458a-85e6-beddbcf82bb0", "ts": "2026-01-26T12:21:06.675122Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "a4a4d6a1-8a73-458a-85e6-beddbcf82bb0", "ts": "2026-01-26T12:21:11.578024Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "683a955531fc", "latency_ms": 4900, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "a4a4d6a1-8a73-458a-85e6-beddbcf82bb0", "ts": "2026-01-26T12:21:11.580022Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "a4a4d6a1-8a73-458a-85e6-beddbcf82bb0", "ts": "2026-01-26T12:21:11.582020Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "a4a4d6a1-8a73-458a-85e6-beddbcf82bb0", "ts": "2026-01-26T12:21:11.582020Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

@@ -1,0 +1,11 @@
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:49:42.438138Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E07"}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:01.068420Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "mots-clés pour rechercher preuve de paper soumission", "rationale": "Necessité de récupérer la première version du paper pour sa soumission à la conférence."}}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:01.071714Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:04.960003Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "833ccfec5c09", "latency_ms": 3887, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:04.963523Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:04.964519Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:46.452557Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:46.455557Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:46.456557Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:46.458556Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "456912af-e4fa-4f12-8c3d-391681133a3c", "ts": "2026-01-26T16:50:46.459555Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

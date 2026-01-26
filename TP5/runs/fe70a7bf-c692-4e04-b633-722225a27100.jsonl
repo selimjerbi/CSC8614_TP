@@ -1,0 +1,11 @@
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:12.682163Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:27.161817Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Forget password request", "rationale": "Student has requested a password reset"}}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:27.164432Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:30.934703Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e4d98a78cbf4", "latency_ms": 3769, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:30.936704Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:30.937705Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:58.888193Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:58.889192Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:58.890194Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:58.891193Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "fe70a7bf-c692-4e04-b633-722225a27100", "ts": "2026-01-26T16:42:58.892194Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

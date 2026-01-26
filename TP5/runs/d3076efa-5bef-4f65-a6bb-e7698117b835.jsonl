@@ -1,0 +1,2 @@
+{"run_id": "d3076efa-5bef-4f65-a6bb-e7698117b835", "ts": "2026-01-26T11:54:27.262221Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "d3076efa-5bef-4f65-a6bb-e7698117b835", "ts": "2026-01-26T11:54:50.337770Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "UE validation conditions", "rationale": "Email contains information about the requirements for validating a UE."}}}

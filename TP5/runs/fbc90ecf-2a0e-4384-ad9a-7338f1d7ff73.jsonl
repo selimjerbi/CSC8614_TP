@@ -1,0 +1,4 @@
+{"run_id": "fbc90ecf-2a0e-4384-ad9a-7338f1d7ff73", "ts": "2026-01-26T14:03:10.381312Z", "event": "node_start", "data": {"node": "stub_ignore"}}
+{"run_id": "fbc90ecf-2a0e-4384-ad9a-7338f1d7ff73", "ts": "2026-01-26T14:03:10.382312Z", "event": "node_end", "data": {"node": "stub_ignore", "status": "ok"}}
+{"run_id": "fbc90ecf-2a0e-4384-ad9a-7338f1d7ff73", "ts": "2026-01-26T14:03:10.383312Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "fbc90ecf-2a0e-4384-ad9a-7338f1d7ff73", "ts": "2026-01-26T14:03:10.384311Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "ignore"}}

@@ -1,0 +1,7 @@
+{"run_id": "0daa4f21-15f7-4496-926b-5f466d54a44d", "ts": "2026-01-26T12:38:56.320220Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "0daa4f21-15f7-4496-926b-5f466d54a44d", "ts": "2026-01-26T12:39:15.397507Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "other", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "mot de passe ENT oublié par étudiant", "rationale": "Réponse à une demande d'oublie de mot de passe."}}}
+{"run_id": "0daa4f21-15f7-4496-926b-5f466d54a44d", "ts": "2026-01-26T12:39:15.400877Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "0daa4f21-15f7-4496-926b-5f466d54a44d", "ts": "2026-01-26T12:39:19.712489Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "3a2167d8d7b9", "latency_ms": 4310, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "0daa4f21-15f7-4496-926b-5f466d54a44d", "ts": "2026-01-26T12:39:19.714490Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "0daa4f21-15f7-4496-926b-5f466d54a44d", "ts": "2026-01-26T12:39:19.715490Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "0daa4f21-15f7-4496-926b-5f466d54a44d", "ts": "2026-01-26T12:39:49.412104Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
